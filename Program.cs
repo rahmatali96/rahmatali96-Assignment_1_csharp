@@ -27,7 +27,8 @@
                 {
                     throw new ArgumentException("DepartmentName Name can't be empty");
                 }
-                
+                emp = new Employee(Id,Name,DepartmentName);
+                emp.getDetailsCalled += methodCalled;
                 Console.WriteLine("ID: {0}",emp.getId());
                 Console.WriteLine("Name:{0}",emp.getName());
                 Console.WriteLine("DepartmentName:{0}",emp.getDepartmentName());
